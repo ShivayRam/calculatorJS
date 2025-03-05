@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+#calculator {    /*calculator is a div element containing the calculator screen and keys*/
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px; /*makes the calculator screen and keys have rounded corners*/
+    max-width: 500px;
+    overflow: hidden; /*hides the overflow of the calculator screen and keys*/
+}
+
+#display {   /*display is a div element containing the calculator screen*/
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    color: white;
+    background-color: hsl(0, 0%, 30%);
+}
+
+#keys {    /*keys is a div element containing all of the buttons*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);/*creates a grid with 4 columns*/
+    gap: 10px; /*creates a gap between the buttons*/
+    padding: 25px; /*creates padding around the keys*/
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px; /*makes the buttons circular*/
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer; /*makes my cursor a pointer when hovering over the buttons*/
+}
+
+
+button:hover {
+    background-color: hsl(0, 0%, 40%); /*changes the background color of the buttons when hovering over them*/
+}
+
+button:active {
+    background-color: hsl(0, 0%, 50%); /*changes the background color of the buttons when they are clicked*/
+}
+
+.operator-btn {
+    background-color: rgb(11, 42, 11);
+
+}
+
+.operator-btn:hover {
+    background-color: rgb(17, 63, 17);
+    
+}
+
+.operator-btn:active {
+    background-color: rgb(23, 84, 23);
+}
